@@ -1,0 +1,89 @@
+@import "../../../../variables";
+
+.list-wrapper {
+  width:100%;
+  background: $lightColor;
+  padding: 15px;
+
+  .title {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    .item-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 15px;
+      font-weight: 500;
+
+      .left {
+
+        .circle {
+          width: 15px;
+          height: 15px;
+          background: inherit;
+          display: inline-block;
+          border-radius: 50%;
+          border: solid 2px $darkColor;
+          margin-right: 15px;
+        }
+      }
+
+      .right {
+        margin-left: auto;
+      }
+
+
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  .comments-wrapper {
+    font-weight: normal;
+    font-size: 14px;
+
+    ul {
+      display: inline-block;
+      width: calc(100% - 51px);
+      vertical-align: top;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 15px;
+
+        fa {
+          margin-left: 15px;
+        }
+      }
+    }
+
+  }
+
+  fa {
+    padding: 0 5px;
+  }
+
+  fa:hover {
+    color: $lightColor;
+  }
+
+  fa:after {
+    content: none;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .selected {
+    background: lightblue;
+  }
+
+}

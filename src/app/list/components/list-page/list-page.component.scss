@@ -1,0 +1,55 @@
+@import "../../../../variables";
+
+.wrapper {
+  padding-bottom: 90px;
+}
+
+.top-block-wrapper {
+  padding: 15px;
+  width: 100%;
+
+  h2 {
+    color: $darkColor;
+    font-weight: 800;
+  }
+
+  .top-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 15px;
+
+    .right {
+      margin-left: auto;
+    }
+
+    .left {
+      button {
+        border-radius: $borderRadius;
+        margin-left: 15px;
+      }
+
+      .dark-btn {
+        text-transform: uppercase;
+        color: #fff;
+        background: $darkColor;
+        letter-spacing: 2px;
+      }
+
+      .light-btn {
+        color: $darkColor;
+        background: $lightColor;
+      }
+    }
+  }
+
+}
+
+.comment-component-wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+

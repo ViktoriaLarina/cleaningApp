@@ -1,0 +1,30 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "variables";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+button, fa {
+  cursor: pointer;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: $darkColor;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.base-wrapper {
+  background: $extraColor2;
+  padding: 15px;
+  border-radius: $borderRadius;
+}

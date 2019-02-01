@@ -1,0 +1,7 @@
+<div class="base-wrapper">
+  <span *ngIf="currentItem">Kommentar zum Artikel {{currentItem.title}}</span>
+  <p *ngIf="isShowError" class="error-txt">Bitte wählen Sie einen Artikel aus</p>
+  <div class="avatar"></div>
+  <textarea (keyup)="trySendComment($event)" [(ngModel)]="comment"></textarea>
+
+</div>

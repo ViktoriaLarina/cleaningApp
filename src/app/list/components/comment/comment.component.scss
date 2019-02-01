@@ -1,0 +1,25 @@
+@import "../../../../variables";
+
+.base-wrapper {
+  width:100%;
+
+  span {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    text-align: right;
+  }
+
+  textarea {
+    width: calc(100% - 51px);
+    vertical-align: top;
+    border: none;
+    padding: 5px;
+  }
+
+  .error-txt {
+    color: darkred;
+  }
+}
+
+

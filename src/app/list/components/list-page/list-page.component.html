@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <div class="top-block-wrapper">
+    <h2>Wohnzimmer aufräumen</h2>
+    <div class="top-line">
+      <div class="left">
+        <fa [name]="'tag'" rotate="'horizontal"></fa>
+        <button type="button" class="btn dark-btn">persönlich</button>
+        <button type="button" class="btn light-btn">45 min</button>
+      </div>
+      <div class="right">
+        <fa [name]="'angle-down'"></fa>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="data && data.length !== 0">
+    <app-list *ngFor="let list of data" [data]="list"></app-list>
+  </div>
+</div>
+<div class="comment-component-wrapper" *ngIf="data && data.length !== 0">
+  <app-comment></app-comment>
+</div>
+
+
+
